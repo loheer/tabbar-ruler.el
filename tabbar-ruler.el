@@ -12,7 +12,7 @@
 ;; URL: http://github.com/mlf176f2/tabbar-ruler.el
 ;; Keywords: Tabbar, Ruler Mode, Menu, Tool Bar.
 ;; Compatibility: Windows Emacs 23.x
-;; Package-Requires: ((tabbar "2.0.1") (powerline "2.3") (mode-icons "0.1.0"))
+;; Package-Requires: ((tabbar "2.0.1") (mode-icons "0.1.0"))
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
@@ -295,7 +295,7 @@
 (require 'cl)
 (require 'tabbar)
 (require 'easymenu)
-(require 'powerline)
+;;(require 'powerline)
 (require 'mode-icons nil t)
 
 (defgroup tabbar-ruler nil
@@ -342,7 +342,7 @@
   :type '(repeat (string :tag "Buffer Name"))
   :group 'tabbar-ruler)
 
-(defcustom tabbar-ruler-fight-igore-modes '(info-mode helm-mode package-menu-mode)
+(defcustom tabbar-ruler-fight-ignore-modes '(info-mode helm-mode package-menu-mode)
   "Exclude these mode when changing between tabbar and ruler."
   :type '(repeat (symbol :tag "Major Mode"))
   :group 'tabbar-ruler)
@@ -1592,7 +1592,7 @@ Call `tabbar-tab-label-function' to obtain a label for TAB."
           nil)
          ((and (save-match-data (string-match "^[*]Org Src " (buffer-name))))
           nil)
-         ((member major-mode tabbar-ruler-fight-igore-modes)
+         ((member major-mode tabbar-ruler-fight-ignore-modes)
           nil)
          ( (eq major-mode 'helm-mode)
            nil)
