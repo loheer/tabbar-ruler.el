@@ -861,6 +861,15 @@ This copies the :family and :foundry from the `variable-pitch' face."
 	tabbar-ruler-fancy-tab-separator nil
 	tabbar-ruler-fancy-close-image nil))
 
+(defun tabbar-ruler-style-minimal (&optional frame)
+  "Setup minimal style."
+  (setq tabbar-ruler-tab-padding nil
+	tabbar-ruler-pad-selected nil
+	tabbar-ruler-padding-face nil
+	tabbar-ruler-fancy-close-image nil
+	tabbar-ruler-fancy-current-tab-separator nil
+	tabbar-ruler-fancy-tab-separator))
+
 ;;;###autoload
 (defun tabbar-install-faces (&optional frame)
   "Installs faces for a frame."
