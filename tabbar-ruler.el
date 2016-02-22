@@ -81,6 +81,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;; Change Log:
+;; 22-Feb-2016    Loreno Heer
+;;    Removed powerline dependency
+;;
 ;; 13-Sep-2014    Matthew L. Fidler
 ;;    Last-Updated: Sat Dec 15 15:44:34 2012 (+0800) #663 (Matthew L. Fidler)
 ;;    Version bump
