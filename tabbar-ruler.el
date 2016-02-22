@@ -810,7 +810,8 @@ static char * c:\tmp\emacs_xpm[] = {
 	  (const :tag "Let variables decide" nil)
 	  (const :tag "Text-mode tabbar" 'text)
 	  (const :tag "Firefox style" 'firefox)
-	  (const :tag "Firefox with circle close" 'firefox-circle))
+	  (const :tag "Firefox with circle close" 'firefox-circle)
+	  (const :tag "Minimal style" 'minimal))
   :group 'tabbar-ruler)
 
 (defcustom tabbar-ruler-use-variable-pitch t
